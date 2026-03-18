@@ -1,0 +1,20 @@
+/* 基础样式优化 */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}
+
+section {
+    scroll-margin-top: 70px; /* 适配导航栏固定 */
+}
+
+/* 表单样式增强 */
+#consultForm {
+    background-color: #fff;
+}
+
+/* 图片样式 */
+img {
+    max-width: 100%;
+    height: auto;
+}

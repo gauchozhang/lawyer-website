@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[June Wu] - Canadian Lawyer</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <!-- 引入Bootstrap简化样式（可选，新手友好） -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">[June Wu] - Canadian Lawyer</a>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 律师介绍部分 -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="/static/images/profile.jpg" alt="Lawyer Profile" class="img-fluid rounded">
+                </div>
+                <div class="col-md-8">
+                    <h2>Lawyer Intruction</h2>
+                    <p>June holds a Master of Laws (LL.M.) from Osgoode Hall Law School at York University in Ontario, a Master of Laws from East China University of Political Science and Law in China, and a Bachelor’s degree in English Literature from Wuhan University in China.
+June brings a distinctive combination of legal, financial, and cross-border experience to her practice. Before practising law in Ontario, she worked at Bank of Montreal for over seven years, where she developed extensive knowledge of financial products, wealth management structures, estate planning strategies, and trust-related solutions. Earlier in her career, she practised as a lawyer and served as in-house counsel at an asset management company in Shanghai, China for more than twelve years, gaining deep insight into financial regulation and investment frameworks.
+June integrates her background in financial services with her legal training to provide strategic, practical, and forward-looking advice in wills, estate planning, and trusts. She leverages her experience in financial investments and estate structuring to help clients plan proactively, minimize tax exposure, manage risk, and protect what matters most to their families.
+She has established strong professional relationships with leading trust companies in Ontario and maintains access to experienced trust professionals. June assists clients in exploring trust options and facilitates connections with corporate trustees where appropriate. She also works collaboratively with investment advisors and tax professionals to ensure estate plans are implemented in a coordinated and tax-efficient manner. Her approach is holistic — aligning legal strategy with financial and tax planning objectives.
+In addition to her wills, estate and trust practice, June supports small local businesses and start-ups with corporate governance, structuring, and ongoing compliance. She provides practical legal guidance to help local entrepreneurs build strong foundations, manage risk, and grow sustainably from a legal perspective.
+Based in Oakville, Ontario, June is committed to delivering high-quality and affordable legal services to her local community. She is fluent in Mandarin and dedicated to serving the Chinese community with culturally informed, clear, and accessible legal support.
+Outside of her practice, June enjoys spending quality time with her two beloved fur babies.
+</p>
+                    <h4>Qualification</h4>
+                    <ul>
+                        <li>Member of the Lawyers Association of Canada [Province]</li>
+                        <li>[Other qualifications]</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 服务介绍部分 -->
+    <section id="services" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Services</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Estate Law</h5>
+                            <p class="card-text">Inculding: Estate Planning, Estate Probate, Estate Administration, Estate Litigation, Cross-border heritage issues...</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Tax Law</h5>
+                            <p class="card-text">Personal Tax, Corporate Tax, Cross-Border Tax, Tax Risk and Compliance, Tax Litigation...</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Trust Law</h5>
+                            <p class="card-text">Trust Formation & Structuring, Trust Administration, Trust Taxation, Asset protection and wealth inheritance planning, Trust Litigation, Cross-border trust issues...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 咨询表单部分 -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">留下联系方式和咨询内容</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <form id="consultForm" class="shadow p-4 rounded">
+                        <!-- 表单反馈提示 -->
+                        <div id="formMessage" class="mb-3 d-none"></div>
+                        
+                        <div class="mb-3">
+                            <label for="fullName" class="form-label">Full Name</label>
+                            <input type="text" class="form-control" id="fullName" required placeholder="Your full name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email Address</label>
+                            <input type="email" class="form-control" id="email" required placeholder="Your email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Phone Number</label>
+                            <input type="tel" class="form-control" id="phone" placeholder="Your phone number">
+                        </div>
+                        <div class="mb-3">
+                            <label for="subject" class="form-label">Consultation Subject</label>
+                            <select class="form-select" id="subject" required>
+                                <option value="">Select a subject</option>
+                                <option value="Estate">Estate Law</option>
+                                <option value="Tax">Tax Law</option>
+                                <option value="Trust">Trust Law</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Detailed Consultation Request</label>
+                            <textarea class="form-control" id="message" rows="6" required placeholder="Please describe your legal issue in detail..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit Consultation Request</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p>&copy; 2024 [June Wu] - Canadian Lawyer. All rights reserved.</p>
+            <p>Address: [Oakville] | Phone: [(+1)289-772-7768]</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/static/js/script.js"></script>
+</body>
+</html>
