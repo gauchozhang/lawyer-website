@@ -63,7 +63,7 @@ This message was sent from your lawyer website contact form.
         msg = Message(
             subject=email_subject,
             recipients=[RECIPIENT_EMAIL],
-            body=email_body
+            body=email_body,
             sender=("Lawyer Consultation", app.config['MAIL_DEFAULT_SENDER'])
         )
         
