@@ -1,10 +1,7 @@
 from flask import Flask, render_template, request, jsonify
 from flask_mail import Mail, Message
 from dotenv import load_dotenv
-from sendgrid import SendGridAPIClient
-from sendgrid.helpers.mail import Mail
 import os
-import ssl
 
 # 加载环境变量
 load_dotenv()
@@ -38,8 +35,7 @@ def send_email():
     try:
         # 获取前端发送的JSON数据
         data = request.get_json()
-        ssl._create_default_https_context = ssl._create_unverified_context
-
+        
         # 验证必要字段
         required_fields = ['fullName', 'email', 'subject', 'message']
         for field in required_fields:
@@ -62,17 +58,17 @@ Consultation Details:
 
 This message was sent from your lawyer website contact form.
 """
-       
-       # 使用 SendGrid API 发送邮件
-        message = Mail(
-            from_email=app.config['MAIL_DEFAULT_SENDER'],  # 保持你原来的发件人
-            to_emails=RECIPIENT_EMAIL,
+        
+        # 创建邮件消息
+        msg = Message(
             subject=email_subject,
-            plain_text_content=email_body
+            recipients=[RECIPIENT_EMAIL],
+            body=email_body,
+            sender=("Lawyer Consultation", app.config['MAIL_DEFAULT_SENDER'])
         )
-
-        sg = SendGridAPIClient(os.getenv('SENDGRID_API_KEY'))
-        sg.send(message)
+        
+        # 发送邮件
+        mail.send(msg)
         
         return jsonify({'success': True, 'message': 'Email sent successfully'})
     
