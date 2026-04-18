@@ -1,5 +1,5 @@
 /* ============================================
-   Wu & Yuan Law - Professional Design System
+   Wu & Associates - Professional Design System
    ============================================ */
 
 /* ---------- CSS Variables ---------- */
@@ -616,6 +616,145 @@ p {
     font-size: 0.9375rem;
     color: var(--text-muted);
     line-height: 1.7;
+    margin-bottom: 0;
+}
+
+.service-summary {
+    font-size: 0.9375rem;
+    color: var(--text-muted);
+    line-height: 1.7;
+    margin-bottom: 0;
+}
+
+.service-expand-btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1.25rem;
+    background: transparent;
+    color: var(--accent);
+    border: 1px solid var(--accent);
+    border-radius: var(--border-radius);
+    font-size: 0.875rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all var(--transition-fast);
+}
+
+.service-expand-btn:hover {
+    background: var(--accent);
+    color: var(--white);
+}
+
+/* Service Detail Panel */
+.service-detail-panel {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 700px;
+    max-height: 85vh;
+    background: var(--white);
+    border-radius: var(--border-radius-lg);
+    box-shadow: 0 25px 80px rgba(13, 33, 55, 0.25);
+    z-index: 2000;
+    overflow: hidden;
+}
+
+.service-detail-panel.active {
+    display: block;
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translate(-50%, -50%) scale(0.95); }
+    to { opacity: 1; transform: translate(-50%, -50%) scale(1); }
+}
+
+.service-detail-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(13, 33, 55, 0.5);
+    z-index: 1999;
+}
+
+.service-detail-overlay.active {
+    display: block;
+}
+
+.service-detail-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 2rem;
+    background: var(--primary);
+    color: var(--white);
+}
+
+.service-detail-header h3 {
+    color: var(--white);
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.service-detail-close {
+    width: 36px;
+    height: 36px;
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    border-radius: 50%;
+    color: var(--white);
+    font-size: 1.5rem;
+    line-height: 1;
+    cursor: pointer;
+    transition: background var(--transition-fast);
+}
+
+.service-detail-close:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.service-detail-body {
+    padding: 2rem;
+    overflow-y: auto;
+    max-height: calc(85vh - 80px);
+}
+
+.service-detail-body h3 {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--text-primary);
+    margin-bottom: 1.25rem;
+    text-align: left;
+}
+
+.service-detail-body p {
+    font-size: 1rem;
+    color: var(--text-secondary);
+    line-height: 1.8;
+    margin-bottom: 1.25rem;
+    text-align: left;
+}
+
+.service-detail-body p:last-child {
+    margin-bottom: 0;
+}
+
+.service-detail-content p {
+    font-size: 1rem;
+    color: var(--text-secondary);
+    line-height: 1.8;
+    margin-bottom: 1.25rem;
+    text-align: left;
+}
+
+.service-detail-content p:last-child {
     margin-bottom: 0;
 }
 

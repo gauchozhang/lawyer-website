@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wu & Yuan Law | Trusted Legal Services in Ontario</title>
-    <meta name="description" content="Wu & Yuan Law provides comprehensive legal services in Ontario, including wills, estates, trusts, tax law, corporate law, and civil litigation.">
+    <title>Wu & Associates | Trusted Legal Services in Ontario</title>
+    <meta name="description" content="Wu & Associates provides comprehensive legal services in Ontario, including wills, estates, trusts, tax law, corporate law, and civil litigation.">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -29,7 +29,7 @@
     <!-- Navigation -->
     <nav class="nav" id="mainNav">
         <div class="container">
-            <a href="#" class="logo">Wu <span>&</span> Yuan Law</a>
+            <a href="#" class="logo">Wu <span>&</span> Associates</a>
             <ul class="main-nav">
                 <li><a href="#about">About</a></li>
                 <li><a href="#services">Services</a></li>
@@ -56,7 +56,7 @@
             <div class="hero-content">
                 <span class="hero-badge">Ontario's Trusted Legal Advisors</span>
                 <h1>Building <span class="highlight">Remarkable</span> Enterprises & Lives</h1>
-                <p>Wu & Yuan Law provides comprehensive legal services in Ontario, combining expertise with personalized attention to help you navigate complex legal matters with confidence.</p>
+                <p>Wu & Associates provides comprehensive legal services in Ontario, combining expertise with personalized attention to help you navigate complex legal matters with confidence.</p>
                 <div class="hero-buttons">
                     <a href="#contact" class="btn btn-primary">Schedule a Consultation</a>
                     <a href="#services" class="btn btn-outline">Explore Our Services</a>
@@ -151,7 +151,8 @@
             <p class="services-intro">June Wu operates a community-focused sole practice, collaborating with a network of trusted and experienced legal professionals to deliver practical and cost-effective legal solutions.</p>
 
             <div class="services-grid">
-                <div class="service-card">
+                <!-- Wills, Estates & Trusts -->
+                <div class="service-card" data-service="wills">
                     <div class="service-icon">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
@@ -162,10 +163,12 @@
                         </svg>
                     </div>
                     <h4>Wills, Estates & Trusts</h4>
-                    <p>Comprehensive estate planning including will preparation, power of attorney, trust arrangements, probate applications, and estate administration.</p>
+                    <p class="service-summary">Comprehensive estate planning, will preparation, power of attorney, trust arrangements, probate applications, and estate administration.</p>
+                    <button class="service-expand-btn">View Details</button>
                 </div>
 
-                <div class="service-card">
+                <!-- Tax Legal Services -->
+                <div class="service-card" data-service="tax">
                     <div class="service-icon">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <line x1="12" y1="1" x2="12" y2="23"></line>
@@ -173,10 +176,12 @@
                         </svg>
                     </div>
                     <h4>Tax Legal Services</h4>
-                    <p>Expert assistance with CRA audits and reassessments, Notices of Objection, Tax Court representation, net worth audits, and SR&ED disputes.</p>
+                    <p class="service-summary">CRA audits, reassessments, Notices of Objection, Tax Court representation, net worth audits, and SR&ED disputes.</p>
+                    <button class="service-expand-btn">View Details</button>
                 </div>
 
-                <div class="service-card">
+                <!-- Corporate & Commercial -->
+                <div class="service-card" data-service="corporate">
                     <div class="service-icon">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
@@ -184,10 +189,12 @@
                         </svg>
                     </div>
                     <h4>Corporate & Commercial</h4>
-                    <p>Incorporation, corporate governance, shareholder agreements, commercial contracts, and ongoing legal support for small and medium enterprises.</p>
+                    <p class="service-summary">Business formation, corporate governance, shareholder agreements, commercial contracts, and ongoing legal support.</p>
+                    <button class="service-expand-btn">View Details</button>
                 </div>
 
-                <div class="service-card">
+                <!-- Employment Law -->
+                <div class="service-card" data-service="employment">
                     <div class="service-icon">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
@@ -197,10 +204,12 @@
                         </svg>
                     </div>
                     <h4>Employment Law</h4>
-                    <p>Legal support for employment agreements, workplace policies, wrongful dismissal, severance negotiations, and employment standards compliance.</p>
+                    <p class="service-summary">Employment agreements, workplace policies, wrongful dismissal, severance negotiations, and employment standards.</p>
+                    <button class="service-expand-btn">View Details</button>
                 </div>
 
-                <div class="service-card">
+                <!-- Landlord & Tenant -->
+                <div class="service-card" data-service="landlord">
                     <div class="service-icon">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
@@ -208,10 +217,12 @@
                         </svg>
                     </div>
                     <h4>Landlord & Tenant</h4>
-                    <p>Assistance with rental agreements, eviction processes, rent disputes, security deposit issues, lease negotiations, and conflict resolution.</p>
+                    <p class="service-summary">Rental agreements, eviction processes, rent disputes, security deposit issues, and lease negotiations.</p>
+                    <button class="service-expand-btn">View Details</button>
                 </div>
 
-                <div class="service-card">
+                <!-- Civil Litigation -->
+                <div class="service-card" data-service="litigation">
                     <div class="service-icon">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <circle cx="12" cy="12" r="10"></circle>
@@ -220,7 +231,19 @@
                         </svg>
                     </div>
                     <h4>Civil Litigation</h4>
-                    <p>Skilled representation in civil disputes, including negotiation, mediation, and court proceedings with practical strategies that protect your interests.</p>
+                    <p class="service-summary">Civil dispute representation through negotiation, mediation, and court proceedings.</p>
+                    <button class="service-expand-btn">View Details</button>
+                </div>
+            </div>
+
+            <!-- Service Detail Panel -->
+            <div class="service-detail-panel" id="serviceDetailPanel">
+                <div class="service-detail-header">
+                    <h3 id="serviceDetailTitle"></h3>
+                    <button class="service-detail-close" id="serviceDetailClose">&times;</button>
+                </div>
+                <div class="service-detail-body">
+                    <div class="service-detail-content" id="serviceDetailContent"></div>
                 </div>
             </div>
         </div>
@@ -386,7 +409,7 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-brand">
-                    <div class="logo">Wu <span>&</span> Yuan Law</div>
+                    <div class="logo">Wu <span>&</span> Associates</div>
                     <p>Providing comprehensive legal services in Ontario with expertise, integrity, and personalized attention.</p>
                 </div>
                 <div>
@@ -407,7 +430,7 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <div class="footer-copy">© 2024 Wu & Yuan Law. All rights reserved.</div>
+                <div class="footer-copy">© 2024 Wu & Associates. All rights reserved.</div>
                 <div class="footer-phone">(289) 772-7768</div>
             </div>
         </div>
@@ -436,6 +459,86 @@
                 nav.classList.add('scrolled');
             } else {
                 nav.classList.remove('scrolled');
+            }
+        });
+
+        // Service Detail Panel
+        const serviceData = {
+            wills: {
+                title: 'Wills, Estates & Trusts',
+                content: `<p>We provide comprehensive legal services in wills, estates, and trusts, assisting individuals and families at every stage of the planning and administration process. Our services include the preparation of wills and powers of attorney, the creation of trust arrangements, probate applications, estate administration, and estate-related dispute resolution.</p>
+                <p>We work closely with our clients to develop tailored estate plans that reflect their personal, financial, and family circumstances. Where appropriate, we also coordinate with professional trust companies and other advisors to ensure effective and seamless administration.</p>
+                <p>Our approach is practical, detail-oriented, and client-focused. We are committed to delivering clear legal advice and thoughtful planning strategies, enabling our clients to make informed decisions with confidence and peace of mind.</p>`
+            },
+            tax: {
+                title: 'Tax Legal Services',
+                content: `<p>We provide practical and cost-effective legal services in tax matters, assisting individuals, businesses, and professionals in navigating their obligations and resolving disputes with the Canada Revenue Agency.</p>
+                <p>Our services include advising on and responding to audits and reassessments, preparing and filing Notices of Objection, and representing clients in tax disputes, including matters before the Tax Court of Canada. We have experience assisting clients with net worth audits, SR&ED-related disputes, and tax residency issues, as well as other tax compliance and advisory matters.</p>
+                <p>We understand that tax disputes can be complex and stressful. Our approach is practical, responsive, and solutions-oriented. We work closely with our clients to assess their situation, develop effective strategies, and communicate clearly with the CRA at each stage of the process.</p>`
+            },
+            corporate: {
+                title: 'Corporate & Commercial',
+                content: `<p>We provide practical and cost-effective legal services to small and medium-sized businesses, start-ups, and community organizations. Our goal is to support clients with clear, reliable legal advice that aligns with their operational and growth needs.</p>
+                <p>Our services include business formation and structuring, corporate governance, shareholder and partnership agreements, commercial contracts, and ongoing legal support for day-to-day business matters.</p>
+                <p>We understand the challenges faced by growing businesses. Our approach is professional, responsive, and solutions-oriented, with a focus on delivering practical guidance at reasonable cost.</p>`
+            },
+            employment: {
+                title: 'Employment Law',
+                content: `<p>We provide practical and affordable legal services in employment law, assisting both employees and small businesses with a wide range of workplace matters. Our goal is to deliver clear, timely advice that helps clients understand their rights and obligations.</p>
+                <p>Our services include reviewing and drafting employment agreements, advising on workplace policies, and assisting with terminations, severance, and wrongful dismissal matters. We also support clients in resolving workplace disputes, including issues related to compensation, performance, and employment standards.</p>
+                <p>We understand that employment issues can be sensitive and time-sensitive. Our approach is responsive, solutions-oriented, and focused on achieving efficient and practical outcomes.</p>`
+            },
+            landlord: {
+                title: 'Landlord & Tenant',
+                content: `<p>Our services include reviewing and drafting rental agreements, advising on rental policies, and assisting with evictions, rent disputes, and other tenant-related matters. We also support clients in resolving landlord-tenant disputes, including issues related to security deposits, maintenance, and lease violations.</p>
+                <p>We understand that landlord-tenant issues can be sensitive and time-sensitive. Our approach is responsive, solutions-oriented, and focused on achieving efficient and practical outcomes. We aim to provide professional legal support that is accessible and cost-effective.</p>`
+            },
+            litigation: {
+                title: 'Civil Litigation',
+                content: `<p>We provide civil litigation services in Ontario, representing individuals and businesses in resolving disputes efficiently and effectively. Whether through negotiation, mediation, or court proceedings, we focus on practical strategies that protect our clients' interests while managing cost and risk at every stage.</p>`
+            }
+        };
+
+        const detailPanel = document.getElementById('serviceDetailPanel');
+        const detailTitle = document.getElementById('serviceDetailTitle');
+        const detailContent = document.getElementById('serviceDetailContent');
+        const detailClose = document.getElementById('serviceDetailClose');
+
+        // Create overlay
+        const overlay = document.createElement('div');
+        overlay.className = 'service-detail-overlay';
+        document.body.appendChild(overlay);
+
+        // Add click handlers to service cards
+        document.querySelectorAll('.service-card').forEach(function(card) {
+            card.querySelector('.service-expand-btn').addEventListener('click', function() {
+                const serviceKey = card.getAttribute('data-service');
+                const data = serviceData[serviceKey];
+
+                if (data) {
+                    detailTitle.textContent = data.title;
+                    detailContent.innerHTML = data.content;
+                    detailPanel.classList.add('active');
+                    overlay.classList.add('active');
+                    document.body.style.overflow = 'hidden';
+                }
+            });
+        });
+
+        // Close panel
+        function closePanel() {
+            detailPanel.classList.remove('active');
+            overlay.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        detailClose.addEventListener('click', closePanel);
+        overlay.addEventListener('click', closePanel);
+
+        // Close on Escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closePanel();
             }
         });
     </script>
