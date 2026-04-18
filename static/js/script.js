@@ -3,12 +3,18 @@ document.getElementById('consultForm').addEventListener('submit', async function
 
     const formMessage = document.getElementById('formMessage');
     const submitBtn = this.querySelector('button[type="submit"]');
+    const subjectSelect = document.getElementById('subject');
+
+    // If user didn't change selection, default to first option
+    if (subjectSelect.value === '') {
+        subjectSelect.value = 'Wills, Estates & Trusts';
+    }
 
     const formData = {
         fullName: document.getElementById('fullName').value,
         email: document.getElementById('email').value,
         phone: document.getElementById('phone').value,
-        subject: document.getElementById('subject').value,
+        subject: subjectSelect.value,
         message: document.getElementById('message').value
     };
 
