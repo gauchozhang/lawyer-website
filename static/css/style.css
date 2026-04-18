@@ -260,6 +260,25 @@ p {
     display: none !important;
 }
 
+.lang-switch {
+    margin-left: 0.5rem;
+}
+
+.lang-switch a {
+    display: inline-block;
+    padding: 0.375rem 0.75rem;
+    background: var(--primary);
+    color: var(--white) !important;
+    border-radius: var(--border-radius);
+    font-size: 0.8125rem;
+    font-weight: 600;
+    transition: background var(--transition-fast);
+}
+
+.lang-switch a:hover {
+    background: var(--primary-light);
+}
+
 .mobile-toggle {
     display: none;
     flex-direction: column;

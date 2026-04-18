@@ -32,6 +32,11 @@ RECIPIENT_EMAIL = os.getenv('RECIPIENT_EMAIL')
 def index():
     return render_template('index.html')
 
+# 中文版路由
+@app.route('/cn')
+def index_cn():
+    return render_template('index-cn.html')
+
 # 处理邮件发送的API
 @app.route('/send-email', methods=['POST'])
 def send_email():
