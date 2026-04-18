@@ -3,232 +3,441 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>June Wu - Canadian Lawyer</title>
+    <title>Wu & Yuan Law | Trusted Legal Services in Ontario</title>
+    <meta name="description" content="Wu & Yuan Law provides comprehensive legal services in Ontario, including wills, estates, trusts, tax law, corporate law, and civil litigation.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="/static/css/style.css">
-    <!-- 引入Bootstrap简化样式（可选，新手友好） -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚖</text></svg>">
 </head>
 <body>
-    <!-- 导航栏 -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container">
-        <!-- 👇 这里已经美化：更大、更粗、更专业、更美观 -->
-        <a class="navbar-brand fs-5 fw-semibold" href="#">June Wu - Canadian Lawyer</a>    
-        <div class="collapse navbar-collapse">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
-                <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-            </ul>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-contact">
+                <a href="mailto:junewulaw@gmail.com">junewulaw@gmail.com</a>
+                <a href="tel:+12897727768" class="top-bar-phone">(289) 772-7768</a>
+            </div>
         </div>
     </div>
+
+    <!-- Navigation -->
+    <nav class="nav" id="mainNav">
+        <div class="container">
+            <a href="#" class="logo">Wu <span>&</span> Yuan Law</a>
+            <ul class="main-nav">
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#contact" class="nav-cta">Free Consultation</a></li>
+            </ul>
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <div class="mobile-nav" id="mobileNav">
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+            <a href="#contact" class="nav-cta">Free Consultation</a>
+        </div>
     </nav>
 
-    <!-- 律师介绍部分 -->
-    <section id="about" class="py-5">
+    <!-- Hero -->
+    <section class="hero">
         <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <img src="/static/images/June.jpg" alt="Lawyer June Profile" class="img-fluid rounded">
+            <div class="hero-content">
+                <span class="hero-badge">Ontario's Trusted Legal Advisors</span>
+                <h1>Building <span class="highlight">Remarkable</span> Enterprises & Lives</h1>
+                <p>Wu & Yuan Law provides comprehensive legal services in Ontario, combining expertise with personalized attention to help you navigate complex legal matters with confidence.</p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">Schedule a Consultation</a>
+                    <a href="#services" class="btn btn-outline">Explore Our Services</a>
                 </div>
-                <div class="col-md-8">
-                    <h2>June Wu - Barrister & Solicitor in Ontario, Canada</h2>
-                    <ul>
-                        <li>
-                            Holds a Master of Laws (LL.M.) from Osgoode Hall Law School at York University in Ontario, a Master of Laws from East China University of Political Science and Law in China, and a Bachelor’s degree in English Literature from Wuhan University in China.
-                        </li>
-                        <li>
-                            Brings a distinctive combination of legal, financial, and cross-border experience to her practice. Before practising law in Ontario, she worked at Bank of Montreal for over seven years, where she developed extensive knowledge of financial products, wealth management structures, estate planning strategies, and trust-related solutions. Earlier in her career, she practised as a lawyer and served as in-house counsel at an asset management company in Shanghai, China for more than twelve years, gaining deep insight into financial regulation and investment frameworks.
-                        </li>
-                        <li>
-                            Integrates her background in financial services with her legal training to provide strategic, practical, and forward-looking advice in wills, estate planning, and trusts. She leverages her experience in financial investments and estate structuring to help clients plan proactively, minimize tax exposure, manage risk, and protect what matters most to their families.
-                        </li>
-                        <li>
-                            Has established strong professional relationships with leading trust companies in Ontario and maintains access to experienced trust professionals. June assists clients in exploring trust options and facilitates connections with corporate trustees where appropriate. She also works collaboratively with investment advisors and tax professionals to ensure estate plans are implemented in a coordinated and tax-efficient manner. Her approach is holistic — aligning legal strategy with financial and tax planning objectives.
-                        </li>
-                        <li>
-                            In addition to her wills, estate and trust practice, June supports small local businesses and start-ups with corporate governance, structuring, and ongoing compliance. She provides practical legal guidance to help local entrepreneurs build strong foundations, manage risk, and grow sustainably from a legal perspective.
-                        </li>
-                        <li>
-                            Based in Oakville, Ontario, June is committed to delivering high-quality and affordable legal services to her local community. She is fluent in Mandarin and dedicated to serving the Chinese community with culturally informed, clear, and accessible legal support.
-                        </li>
-                        <li>
-                            Outside of her practice, June enjoys spending quality time with her two beloved fur babies.
-                        </li>
-                     </ul>
+            </div>
+        </div>
+        <div class="hero-decoration">
+            <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="100" cy="100" r="80" stroke="white" stroke-width="1" opacity="0.3"/>
+                <circle cx="100" cy="100" r="60" stroke="white" stroke-width="1" opacity="0.2"/>
+                <circle cx="100" cy="100" r="40" stroke="white" stroke-width="1" opacity="0.1"/>
+            </svg>
+        </div>
+    </section>
+
+    <!-- About / Team -->
+    <section id="about" class="about-section section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Meet Our Team</span>
+                <h2>Dedicated Legal Professionals</h2>
+                <div class="divider"></div>
+            </div>
+
+            <div class="team-grid">
+                <!-- June Wu -->
+                <div class="attorney-card">
+                    <div class="attorney-image">
+                        <img src="/static/images/June.jpg" alt="June Wu - Barrister & Solicitor">
+                    </div>
+                    <div class="attorney-info">
+                        <h3>June Wu</h3>
+                        <p class="attorney-title">Barrister & Solicitor in Ontario, Canada</p>
+                        <ul class="attorney-bio">
+                            <li>Holds a Master of Laws (LL.M.) from Osgoode Hall Law School at York University in Ontario, a Master of Laws from East China University of Political Science and Law in China, and a Bachelor's degree in English Literature from Wuhan University in China.</li>
+                            <li>Brings a distinctive combination of legal, financial, and cross-border experience to her practice. Before practising law in Ontario, she worked at Bank of Montreal for over seven years, where she developed extensive knowledge of financial products, wealth management structures, estate planning strategies, and trust-related solutions.</li>
+                            <li>Integrates her background in financial services with her legal training to provide strategic, practical, and forward-looking advice in wills, estate planning, and trusts. She leverages her experience in financial investments and estate structuring to help clients plan proactively, minimize tax exposure, manage risk, and protect what matters most to their families.</li>
+                            <li>Based in Oakville, Ontario, June is committed to delivering high-quality and affordable legal services to her local community. She is fluent in Mandarin and dedicated to serving the Chinese community with culturally informed, clear, and accessible legal support.</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="col-12 my-4">
-                    <hr style="border: 1px solid #ccc; width: 100%;">
-                </div>
-                <div class="col-md-4">
-                    <img src="/static/images/Bruce.jpg" alt="Lawyer Bruc Profile" class="img-fluid rounded">
-                </div>
-                <div class="col-md-8">
-                    <h2>Yanguo Yuan - Barrister & Solicitor in Ontario, Canada</h2>
-                    <ul>
-                        <li>
-                            Dr. Yuan holds a Doctor of Philosophy (PhD) in Corporate Laws and a Professional Master of Laws (LL.M.) in Canadian Common Law from Osgoode Hall Law School. His academic training in corporate law provides a strong theoretical foundation that informs his practical, solutions-oriented approach to advising clients.                        
-                        </li>
-                        <li>
-                            Dr. Yuan focuses his practice on corporate and commercial law, advising entrepreneurs, private companies, and investors on incorporations, corporate structuring and reorganizations, shareholders’ agreements, governance matters, commercial contracts, and private mergers and acquisitions. He supports clients at every stage of the business lifecycle — from formation and early-stage growth to investment, strategic transactions, and ongoing compliance.                        
-                        </li>
-                        <li>
-                            Before practising in Ontario, Dr. Yuan gained extensive cross-border experience in both in-house and private practice settings, where he worked on mergers and acquisitions, strategic investments, and complex commercial transactions. He has broad experience drafting and negotiating transaction documents, coordinating due diligence processes, and advising on governance and regulatory considerations.                        
-                        </li>
-                        <li>
-                            Dr. Yuan combines rigorous academic training with practical transactional insight to deliver clear, strategic, and business-focused legal advice. He is fluent in English and Chinese and is well positioned to assist clients engaged in domestic and cross-border business activities.                        
-                        </li>
+
+                <!-- Yanguo Yuan -->
+                <div class="attorney-card reverse">
+                    <div class="attorney-image">
+                        <img src="/static/images/Bruce.jpg" alt="Yanguo Yuan - Barrister & Solicitor">
+                    </div>
+                    <div class="attorney-info">
+                        <h3>Yanguo Yuan</h3>
+                        <p class="attorney-title">Barrister & Solicitor in Ontario, Canada</p>
+                        <ul class="attorney-bio">
+                            <li>Dr. Yuan holds a Doctor of Philosophy (PhD) in Corporate Laws and a Professional Master of Laws (LL.M.) in Canadian Common Law from Osgoode Hall Law School. His academic training in corporate law provides a strong theoretical foundation that informs his practical, solutions-oriented approach to advising clients.</li>
+                            <li>Dr. Yuan focuses his practice on corporate and commercial law, advising entrepreneurs, private companies, and investors on incorporations, corporate structuring and reorganizations, shareholders' agreements, governance matters, commercial contracts, and private mergers and acquisitions.</li>
+                            <li>Before practising in Ontario, Dr. Yuan gained extensive cross-border experience in both in-house and private practice settings, where he worked on mergers and acquisitions, strategic investments, and complex commercial transactions.</li>
+                            <li>Dr. Yuan combines rigorous academic training with practical transactional insight to deliver clear, strategic, and business-focused legal advice. He is fluent in English and Chinese and is well positioned to assist clients engaged in domestic and cross-border business activities.</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- 服务介绍部分 -->
-    <section id="services" class="py-5 bg-light">
-    <div class="container">
-        <h2 class="text-center mb-5 fw-bold">Services</h2>
-        
-        <!-- 服务简介 -->
-    <div class="row justify-content-center mb-5">
-    <div class="col-lg-10 text-center">
-        <p class="fst-italic text-justify fs-5 mb-0">
-            June Wu operates a community-focused sole practice, collaborating with a network of trusted and experienced sole practice legal professionals to deliver practical and cost-effective legal solutions. By leveraging an efficient, remote practice model, June is able to offer reasonable fees while maintaining a high standard of professional, responsive, and reliable service.
-        </p>
-    </div>
-</div>
-                
- 
-
-        <div class="row g-4">
-
-            <!-- 1. Wills, Estates & Trusts -->
-            <div class="col-md-6">
-                <div class="card h-100 shadow-sm border-0">
-                    <div class="card-body p-4">
-                        <h5 class="card-title fw-bold mb-3">Wills, Estates & Trusts</h5>
-                        <p class="card-text text-muted text-justify">We provide comprehensive legal services in wills, estates, and trusts, assisting individuals and families at every stage of the planning and administration process. Our services include the preparation of wills and powers of attorney, the creation of trust arrangements, probate applications, estate administration, and estate-related dispute resolution.</p>
-                        <p class="card-text text-muted mt-1 text-justify">We work closely with our clients to develop tailored estate plans that reflect their personal, financial, and family circumstances. Where appropriate, we also coordinate with professional trust companies and other advisors to ensure effective and seamless administration.</p>
-                        <p class="card-text text-muted mt-1 text-justify">Our approach is practical, detail-oriented, and client-focused. We are committed to delivering clear legal advice and thoughtful planning strategies, enabling our clients to make informed decisions with confidence and peace of mind. From initial planning to final administration, we guide our clients through each step with care and professionalism. </p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- 2. Tax Legal Services -->
-            <div class="col-md-6">
-                <div class="card h-100 shadow-sm border-0">
-                    <div class="card-body p-4">
-                        <h5 class="card-title fw-bold mb-3">Tax Legal Services</h5>
-                        
-                        <p class="card-text text-muted text-justify">We provide practical and cost-effective legal services in tax matters, assisting individuals, businesses, and professionals in navigating their obligations and resolving disputes with the Canada Revenue Agency.</p>
-                        <p class="card-text text-muted mt-1 text-justify">Our services include advising on and responding to audits and reassessments, preparing and filing Notices of Objection, and representing clients in tax disputes, including matters before the Tax Court of Canada. We have experience assisting clients with net worth audits, SR&ED-related disputes, and tax residency issues, as well as other tax compliance and advisory matters.</p>
-                        <p class="card-text text-muted mt-1 text-justify">We understand that tax disputes can be complex and stressful. Our approach is practical, responsive, and solutions-oriented. We work closely with our clients to assess their situation, develop effective strategies, and communicate clearly with the CRA at each stage of the process.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- 3. Employment Law Services -->
-            <div class="col-md-6">
-                <div class="card h-100 shadow-sm border-0">
-                    <div class="card-body p-4">
-                        <h5 class="card-title fw-bold mb-3">Employment Law Services</h5>
-                        <p class="card-text text-muted text-justify">We provide practical and affordable legal services in employment law, assisting both employees and small businesses with a wide range of workplace matters. Our goal is to deliver clear, timely advice that helps clients understand their rights and obligations and make informed decisions.</p>
-                        <p class="card-text text-muted mt-1 text-justify">Our services include reviewing and drafting employment agreements, advising on workplace policies, and assisting with terminations, severance, and wrongful dismissal matters. We also support clients in resolving workplace disputes, including issues related to compensation, performance, and employment standards.</p>
-                        <p class="card-text text-muted mt-1 text-justify">We understand that employment issues can be sensitive and time-sensitive. Our approach is responsive, solutions-oriented, and focused on achieving efficient and practical outcomes. We aim to provide professional legal support that is accessible and cost-effective, helping our clients address issues with confidence and clarity.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- 4. Corporate & Commercial Services -->
-            <div class="col-md-6">
-                <div class="card h-100 shadow-sm border-0">
-                    <div class="card-body p-4">
-                        <h5 class="card-title fw-bold mb-3">Corporate & Commercial Services</h5>
-                        <p class="card-text text-muted text-justify">We provide practical and cost-effective legal services to small and medium-sized businesses, start-ups, and community organizations, including charities and not-for-profits. Our goal is to support clients with clear, reliable legal advice that aligns with their operational and growth needs.</p>
-                        <p class="card-text text-muted mt-1 text-justify">Our services include business formation and structuring, corporate governance, shareholder and partnership agreements, commercial contracts, and ongoing legal support for day-to-day business matters. We also assist charities and not-for-profit organizations with incorporation, governance, and regulatory compliance.</p>
-                        <p class="card-text text-muted mt-1 text-justify">We understand the challenges faced by growing businesses and community organizations. Our approach is professional, responsive, and solutions-oriented, with a focus on delivering practical guidance at reasonable cost. We aim to be a trusted legal partner, providing accessible and efficient services that help our clients operate with confidence.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- 5. Landlord & Tenant Disputes -->
-            <div class="col-md-6">
-                <div class="card h-100 shadow-sm border-0">
-                    <div class="card-body p-4">
-                        <h5 class="card-title fw-bold mb-3">Landlord & Tenant Disputes</h5>
-                        <p class="card-text text-muted text-justify">Our services include reviewing and drafting rental agreements, advising on rental policies, and assisting with evictions, rent disputes, and other tenant-related matters. We also support clients in resolving landlord-tenant disputes, including issues related to security deposits, maintenance, and lease violations.</p>
-                        <p class="card-text text-muted mt-1 text-justify">We understand that landlord-tenant issues can be sensitive and time-sensitive. Our approach is responsive, solutions-oriented, and focused on achieving efficient and practical outcomes. We aim to provide professional legal support that is accessible and cost-effective, helping our clients address issues with confidence and clarity.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- 6. Civil Litigation -->
-            <div class="col-md-6">
-                <div class="card h-100 shadow-sm border-0">
-                    <div class="card-body p-4">
-                        <h5 class="card-title fw-bold mb-3">Civil Litigation</h5>
-                        <p class="card-text text-muted text-justify">We provide civil litigation services in Ontario, representing individuals and businesses in resolving disputes efficiently and effectively. Whether through negotiation, mediation, or court proceedings, we focus on practical strategies that protect our clients’ interests while managing cost and risk at every stage.</p>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</section>
-
-    <!-- 咨询表单部分 -->
-    <section id="contact" class="py-5">
+    <!-- Statistics -->
+    <section class="stats-section">
         <div class="container">
-            <h2 class="text-center mb-4">Contact & Consultation</h2>
-            <div class="row justify-content-center">
-                <div class="col-md-8">
-                    <form id="consultForm" class="shadow p-4 rounded">
-                        <!-- 表单反馈提示 -->
-                        <div id="formMessage" class="mb-3 d-none"></div>
-                        
-                        <div class="mb-3">
-                            <label for="fullName" class="form-label">Full Name</label>
-                            <input type="text" class="form-control" id="fullName" required placeholder="Your full name">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number">15+</div>
+                    <div class="stat-label">Years of Combined Experience</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">400+</div>
+                    <div class="stat-label">Satisfied Clients</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">2</div>
+                    <div class="stat-label">Practice Areas</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="services-section section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">What We Offer</span>
+                <h2>Our Legal Services</h2>
+                <div class="divider"></div>
+            </div>
+
+            <p class="services-intro">June Wu operates a community-focused sole practice, collaborating with a network of trusted and experienced legal professionals to deliver practical and cost-effective legal solutions.</p>
+
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                            <polyline points="14 2 14 8 20 8"></polyline>
+                            <line x1="16" y1="13" x2="8" y2="13"></line>
+                            <line x1="16" y1="17" x2="8" y2="17"></line>
+                            <polyline points="10 9 9 9 8 9"></polyline>
+                        </svg>
+                    </div>
+                    <h4>Wills, Estates & Trusts</h4>
+                    <p>Comprehensive estate planning including will preparation, power of attorney, trust arrangements, probate applications, and estate administration.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="12" y1="1" x2="12" y2="23"></line>
+                            <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                        </svg>
+                    </div>
+                    <h4>Tax Legal Services</h4>
+                    <p>Expert assistance with CRA audits and reassessments, Notices of Objection, Tax Court representation, net worth audits, and SR&ED disputes.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                            <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                        </svg>
+                    </div>
+                    <h4>Corporate & Commercial</h4>
+                    <p>Incorporation, corporate governance, shareholder agreements, commercial contracts, and ongoing legal support for small and medium enterprises.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="9" cy="7" r="4"></circle>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                        </svg>
+                    </div>
+                    <h4>Employment Law</h4>
+                    <p>Legal support for employment agreements, workplace policies, wrongful dismissal, severance negotiations, and employment standards compliance.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                            <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                        </svg>
+                    </div>
+                    <h4>Landlord & Tenant</h4>
+                    <p>Assistance with rental agreements, eviction processes, rent disputes, security deposit issues, lease negotiations, and conflict resolution.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <path d="M12 16v-4"></path>
+                            <path d="M12 8h.01"></path>
+                        </svg>
+                    </div>
+                    <h4>Civil Litigation</h4>
+                    <p>Skilled representation in civil disputes, including negotiation, mediation, and court proceedings with practical strategies that protect your interests.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Values -->
+    <section class="values-section section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Our Philosophy</span>
+                <h2>Core Values</h2>
+                <div class="divider"></div>
+            </div>
+
+            <div class="values-grid">
+                <div class="value-card">
+                    <div class="value-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                        </svg>
+                    </div>
+                    <h4>Excellence</h4>
+                    <p>Do things the right way, do them well, do them ethically, and use great tools.</p>
+                </div>
+
+                <div class="value-card">
+                    <div class="value-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                        </svg>
+                    </div>
+                    <h4>Service</h4>
+                    <p>Be service-oriented. Serve and encourage our clients as they build. Display humility, courage and empathy.</p>
+                </div>
+
+                <div class="value-card">
+                    <div class="value-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                        </svg>
+                    </div>
+                    <h4>Innovation</h4>
+                    <p>Try new things that reinforce our values. Stay abreast of changes and innovations in our fields.</p>
+                </div>
+
+                <div class="value-card">
+                    <div class="value-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <path d="M8 14s1.5 2 4 2 4-2 4-2"></path>
+                            <line x1="9" y1="9" x2="9.01" y2="9"></line>
+                            <line x1="15" y1="9" x2="15.01" y2="9"></line>
+                        </svg>
+                    </div>
+                    <h4>Fun</h4>
+                    <p>Use great tools that make our work fun. Build each other up. Aim to enjoy our work.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact-section section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Get In Touch</span>
+                <h2>Contact Us</h2>
+                <div class="divider"></div>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Schedule a Consultation</h3>
+                    <p>We offer initial consultations to understand your needs and discuss how we can assist you. Reach out today to schedule your appointment.</p>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
                         </div>
-                        <div class="mb-3">
-                            <label for="email" class="form-label">Email Address</label>
-                            <input type="email" class="form-control" id="email" required placeholder="Your email">
+                        <div>
+                            <span class="contact-label">Email</span>
+                            <span class="contact-value">junewulaw@gmail.com</span>
                         </div>
-                        <div class="mb-3">
-                            <label for="phone" class="form-label">Phone Number</label>
-                            <input type="tel" class="form-control" id="phone" placeholder="Your phone number">
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                            </svg>
                         </div>
-                        <div class="mb-3">
-                            <label for="subject" class="form-label">Consultation Subject</label>
-                            <select class="form-select" id="subject" required>
-                                <option value="">Select a subject</option>
-                                <option value="Estate">Estate Law</option>
-                                <option value="Tax">Tax Law</option>
-                                <option value="Trust">Trust Law</option>
-                                <option value="Other">Other</option>
-                            </select>
+                        <div>
+                            <span class="contact-label">Phone</span>
+                            <span class="contact-value">(289) 772-7768</span>
                         </div>
-                        <div class="mb-3">
-                            <label for="message" class="form-label">Detailed Consultation Request</label>
-                            <textarea class="form-control" id="message" rows="6" required placeholder="Please describe your legal issue in detail..."></textarea>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
                         </div>
-                        <button type="submit" class="btn btn-primary">Submit Consultation Request</button>
+                        <div>
+                            <span class="contact-label">Location</span>
+                            <span class="contact-value">Oakville, Ontario, Canada</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <form id="consultForm">
+                        <div id="formMessage" class="form-message"></div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label class="form-label" for="fullName">Full Name *</label>
+                                <input type="text" class="form-control" id="fullName" name="fullName" required placeholder="Your full name">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="email">Email Address *</label>
+                                <input type="email" class="form-control" id="email" name="email" required placeholder="Your email address">
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label class="form-label" for="phone">Phone Number</label>
+                                <input type="tel" class="form-control" id="phone" name="phone" placeholder="Your phone number">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="subject">Consultation Subject *</label>
+                                <select class="form-control" id="subject" name="subject" required>
+                                    <option value="">Select a subject</option>
+                                    <option value="Estate">Estate Law</option>
+                                    <option value="Tax">Tax Law</option>
+                                    <option value="Trust">Trust Law</option>
+                                    <option value="Corporate">Corporate Law</option>
+                                    <option value="Employment">Employment Law</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group full">
+                            <label class="form-label" for="message">Detailed Consultation Request *</label>
+                            <textarea class="form-control" id="message" name="message" rows="5" required placeholder="Please describe your legal issue in detail..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn-submit">Submit Consultation Request</button>
                     </form>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- 页脚 -->
-    <footer class="bg-dark text-white py-4">
-        <div class="container text-center">
-            <p>&copy; 2024 [June Wu] - Canadian Lawyer. All rights reserved.</p>
-            <p>Address: [junewulaw@gmail.com] </p>
-            <p>Phone: [(+1)289-772-7768]</p>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="logo">Wu <span>&</span> Yuan Law</div>
+                    <p>Providing comprehensive legal services in Ontario with expertise, integrity, and personalized attention.</p>
+                </div>
+                <div>
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <div class="footer-links">
+                        <a href="#about">About Us</a>
+                        <a href="#services">Services</a>
+                        <a href="#contact">Contact</a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="footer-heading">Contact</h4>
+                    <div class="footer-links">
+                        <a href="mailto:junewulaw@gmail.com">junewulaw@gmail.com</a>
+                        <a href="tel:+12897727768">(289) 772-7768</a>
+                        <span>Oakville, Ontario, Canada</span>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-copy">© 2024 Wu & Yuan Law. All rights reserved.</div>
+                <div class="footer-phone">(289) 772-7768</div>
+            </div>
         </div>
     </footer>
 
-    <!-- JavaScript -->
+    <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="/static/js/script.js"></script>
+    <script>
+        // Mobile nav toggle
+        document.getElementById('mobileToggle').addEventListener('click', function() {
+            document.getElementById('mobileNav').classList.toggle('active');
+        });
+
+        // Close mobile nav on link click
+        document.querySelectorAll('.mobile-nav a').forEach(function(link) {
+            link.addEventListener('click', function() {
+                document.getElementById('mobileNav').classList.remove('active');
+            });
+        });
+
+        // Nav scroll effect
+        window.addEventListener('scroll', function() {
+            const nav = document.getElementById('mainNav');
+            if (window.scrollY > 50) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        });
+    </script>
 </body>
 </html>

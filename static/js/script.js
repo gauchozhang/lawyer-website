@@ -26,24 +26,19 @@ document.getElementById('consultForm').addEventListener('submit', async function
 
         const result = await response.json();
 
-        // -------------------------
-        // 【关键修复】确保提示一定会显示
-        // -------------------------
-        formMessage.classList.remove('d-none');
-
         if (result.success) {
-            formMessage.className = 'mb-3 alert alert-success';
+            formMessage.className = 'form-message success';
             formMessage.textContent = 'Your consultation request has been sent successfully! I will contact you soon.';
             this.reset();
         } else {
-            formMessage.className = 'mb-3 alert alert-danger';
+            formMessage.className = 'form-message error';
             formMessage.textContent = 'Failed: ' + (result.error || 'Unknown error');
         }
 
+        formMessage.scrollIntoView({ behavior: 'smooth', block: 'center' });
+
     } catch (error) {
-        const formMessage = document.getElementById('formMessage');
-        formMessage.classList.remove('d-none');
-        formMessage.className = 'mb-3 alert alert-danger';
+        formMessage.className = 'form-message error';
         formMessage.textContent = 'Server connection error. Please try again later.';
         console.error('Error:', error);
     } finally {
