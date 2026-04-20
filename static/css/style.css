@@ -1159,9 +1159,10 @@ footer {
     }
 
     .attorney-image img {
-        aspect-ratio: 4/3;
+        aspect-ratio: auto;
         max-width: 280px;
         margin: 0 auto;
+        height: auto;
     }
 
     .stats-grid {
